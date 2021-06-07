@@ -46,6 +46,7 @@ ul { list-style: "- " }
 #main .post > * { margin-bottom: .5em }
 #main .post .date, #main .post .categories, #main .post .tags { color: #ccc; font-size: 14px }
 #main .post .categories, #main .post .tags { display: inline-block }
+#main .post .categories > span, #main .post .tags > span { margin-left: -.1em; margin-right: -.1em; padding-left: .1em; padding-right: .1em }
 #main .post .categories > span { background: #088 }
 #main .post .tags > span { background: #444 }
 #main .post .excerpt, #main .post .content { margin-top: 1em }
