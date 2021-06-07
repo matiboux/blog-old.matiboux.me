@@ -3,7 +3,7 @@ theme: # Not using a theme
 title: blog.matiboux.me
 description: Matiboux's blog
 author: Matiboux
-lang: fr
+lang: en
 excerpt_separator: <!--more-->
 
 # Jekyll confiuration
