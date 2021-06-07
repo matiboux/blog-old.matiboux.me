@@ -1,0 +1,54 @@
+/** blog.matiboux.me CSS stylesheet */
+
+html {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	background: #000;
+	width: 100%;
+	max-width: 800px;
+	min-height: 100%;
+	margin: 0;
+	flex-direction: column;
+	color: #eee;
+	font-size: 16px;
+	font-family: "Courier New", Courier;
+}
+
+*:last-child { margin-bottom: 0 !important }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0 0 1em; }
+
+a { margin-left: -.1em; margin-right: -.1em; padding-left: .1em; padding-right: .1em; color: #fff; text-decoration: none !important }
+a:hover { background: #fff; color: #000 }
+
+ul { list-style: "- " }
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	height: 50px;
+	line-height: 50px;
+}
+#navbar a + a { margin-left: 10px; }
+
+#main { padding: 2rem 1rem }
+
+#main h1 { background: #fff; margin-left: -.1em; margin-right: -.1em; padding-left: .1em; padding-right: .1em; color: #000 }
+#main h1.bg-red { background: #f00 }
+#main h1.bg-blue { background: #8cf }
+
+#main .post > * { margin-bottom: .5em }
+#main .post .date, #main .post .categories, #main .post .tags { color: #ccc; font-size: 14px }
+#main .post .categories, #main .post .tags { display: inline-block }
+#main .post .categories > span { background: #088 }
+#main .post .tags > span { background: #444 }
+#main .post .excerpt, #main .post .content { margin-top: 1em }
+#main .post .excerpt { margin-left: 1rem; font-size: 14px }
+#main .post .content a { background: #444 }
+#main .post .content a:hover { background: #fff }

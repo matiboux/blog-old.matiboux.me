@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<div class="post">
+	<h1 class="title bg-white">{{ page.title }}</h1>
+
+	<p class="date">{{ page.date | date: "%B %e, %Y" }}</p>
+	<p class="categories"><span>{{ page.categories | join: "</span> <span>" }}</span></p>
+	<p class="tags"><span>{{ page.tags | join: "</span> <span>" }}</span></p>
+
+	<div class="content">
+		{{ content }}
+	</div>
+</div>

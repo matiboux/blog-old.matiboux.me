@@ -1,0 +1,13 @@
+---
+layout: bodyless
+---
+
+<body {% if page.body_class %}class="{{ page.body_class }}"{% endif %}>
+
+	{{ content }}
+
+	{% unless page.noscript %}
+		<!-- <script src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script> -->
+	{% endunless %}
+
+</body>

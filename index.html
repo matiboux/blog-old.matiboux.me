@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<h1 class="bg-blue">blog.matiboux.me ∕∕∕</h1>
+
+{% if site.posts.size > 0 %}
+	{% for post in site.posts %}
+		<div class="post">
+			<h4 class="title">&rsaquo; <a href="{{ post.url }}">{{ post.title }}</a></h4>
+			<p class="date">{{ post.date | date: "%B %e, %Y" }}</p>
+			<p class="categories"><span>{{ post.categories | join: "</span> <span>" }}</span></p>
+			<p class="tags"><span>{{ post.tags | join: "</span> <span>" }}</span></p>
+			<div class="excerpt">
+				{{ post.excerpt }}
+				<p><a href="{{ post.url }}">[ click to read ]</a></p>
+			</div>
+		</div>
+	{% endfor %}
+{% else %}
+	<p>There are no posts published yet. Hopefully soon!</p>
+{% endif %}
