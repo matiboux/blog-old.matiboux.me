@@ -1,4 +1,10 @@
+# Site configuration
+theme: # Not using a theme
 title: blog.matiboux.me
 description: Matiboux's blog
 author: Matiboux
+lang: fr
 excerpt_separator: <!--more-->
+
+# Jekyll confiuration
+exclude: [CNAME, LICENSE, README.md]
