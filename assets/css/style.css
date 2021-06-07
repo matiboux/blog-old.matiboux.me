@@ -32,14 +32,24 @@ ul { list-style: "- " }
 #navbar {
 	display: flex;
 	justify-content: space-between;
-	height: 50px;
-	line-height: 50px;
+	flex-wrap: wrap;
+	/* height: 50px; */
+	line-height: 30px;
+	padding: 10px 1rem;
 }
 #navbar a + a { margin-left: 10px; }
 
 #main { padding: 2rem 1rem }
 
-#main h1 { background: #fff; margin-left: -.1em; margin-right: -.1em; padding-left: .1em; padding-right: .1em; color: #000 }
+#main h1 {
+	background: #fff;
+	margin-left: -.1em;
+	margin-right: -.1em;
+	padding-left: .1em;
+	padding-right: .1em;
+	color: #000;
+	word-break: break-word;
+}
 #main h1.bg-red { background: #f00 }
 #main h1.bg-blue { background: #8cf }
 
