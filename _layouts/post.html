@@ -5,9 +5,24 @@ layout: default
 <div class="post">
 	<h1 class="title bg-white">{{ page.title }}</h1>
 
-	<p class="date">{{ page.date | date: "%B %e, %Y" }}</p>
-	<p class="categories"><span>{{ page.categories | join: "</span> <span>" }}</span></p>
-	<p class="tags"><span>{{ page.tags | join: "</span> <span>" }}</span></p>
+	<p class="metadata date">
+		<i class="fas fa-calendar-day fa-fw"></i>
+		{{ page.date | date: "%B %e, %Y" }}
+	</p>
+	{% if page.last_updated %}
+		<p class="metadata last-updated">
+			<i class="fas fa-pencil-alt fa-fw"></i>
+			{{ page.last_updated | date: "%B %e, %Y" }}
+		</p>
+	{% endif %}
+	<p class="metadata categories">
+		<i class="fas fa-quote-left fa-fw"></i>
+		<span>{{ page.categories | join: "</span> <span>" }}</span>
+	</p>
+	<p class="metadata tags">
+		<i class="fas fa-tag fa-fw"></i>
+		<span>{{ page.tags | join: "</span> <span>" }}</span>
+	</p>
 
 	<div class="content">
 		{{ content }}

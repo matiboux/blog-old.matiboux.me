@@ -7,7 +7,11 @@ layout: bodyless
 	{{ content }}
 
 	{% unless page.noscript %}
-		<!-- <script src="{{ '/assets/js/script.js?v=' | append: site.github.build_revision | relative_url }}"></script> -->
+		<!-- <script src="{{ '/assets/script.js?v=' | append: site.github.build_revision | relative_url }}"></script> -->
 	{% endunless %}
+
+	{% for script in page.scripts %}
+		<script src="{{ '/assets/' | append: script | append: '?v=' | append: site.github.build_revision | relative_url }}"></script>
+	{% endfor %}
 
 </body>

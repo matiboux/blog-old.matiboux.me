@@ -1,0 +1,84 @@
+/** blog.matiboux.me CSS stylesheet */
+
+html {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	background: #282420;
+	width: 100%;
+	max-width: 800px;
+	min-height: 100%;
+	margin: 0;
+	flex-direction: column;
+	color: #eee;
+	font-size: 16px;
+}
+
+*:last-child { margin-bottom: 0 !important }
+
+h1, h2, h3, h4, h5, h6, p { margin: 0 0 1rem; }
+
+a, a:hover, a:focus { color: inherit; text-decoration: none }
+a { border-bottom: 2px dotted #ccc }
+a:hover { border-bottom: none }
+
+ul { list-style: "- " }
+
+#navbar {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* height: 50px; */
+	line-height: 30px;
+	padding: 10px 1rem;
+}
+#navbar a + a { margin-left: 10px; }
+
+#main { padding: 2rem 1rem }
+
+#main h1 {
+	/* background: #fff; */
+	/* margin-left: -.1em; */
+	/* margin-right: -.1em; */
+	/* padding-left: .1em; */
+	/* padding-right: .1em; */
+	/* color: #000; */
+	/* text-decoration: underline solid #ccc; */
+	padding-bottom: 12px;
+	border-bottom: 4px solid #eee;
+	word-break: break-word;
+}
+#main h1.color-red { color: #e00; border-color: #e00 }
+#main h1#title { color: #8af; border-color: #8af; animation: title-color-animation 5s infinite }
+
+@keyframes title-color-animation {
+	0% { color: #6af; border-color: #6af }
+	16.6666666667% { color: #aaf; border-color: #aaf }
+	33.3333333333% { color: #f6a; border-color: #f6a }
+	50% { color: #faa; border-color: #faa }
+	66.6666666667% { color: #af6; border-color: #af6 }
+	83.3333333333% { color: #afa; border-color: #afa }
+	100% { color: #6af; border-color: #6af }
+}
+
+#main .posts > .post { padding-left: 1rem }
+#main .posts > .post .title { margin-left: -1rem }
+#main .post { margin-bottom: 1em }
+#main .post > * { margin-bottom: .5em }
+#main .post .metadata { display: inline-block; margin-bottom: 0; color: #ccc; font-size: 14px }
+#main .post .metadata + .metadata { margin-left: .5em }
+/* #main .post .categories > span, #main .post .tags > span { margin-left: -.1em; margin-right: -.1em; padding-left: .1em; padding-right: .1em } */
+#main .post .categories > span, #main .post .tags > span { border-bottom: 1px dotted }
+#main .post .categories > span { color: #0cc; border-color: #0cc }
+#main .post .tags > span { color: #888; border-color: #888 }
+#main .post .excerpt { margin-top: .5em; margin-left: 1rem; font-size: 14px }
+#main .post .categories + .excerpt, #main .post .tags + .excerpt { margin-top: .5em }
+#main .post .excerpt > p { margin-bottom: .5em }
+#main .post .content { margin-top: 1em }
+/* #main .post .content a { background: #444 } */
+/* #main .post .content a:hover { background: #fff } */
