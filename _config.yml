@@ -1,5 +1,7 @@
 # Site configuration
 theme: # Not using a theme
+plugins:
+- jekyll-feed
 title: blog.matiboux.me
 description: Matiboux's blog
 author: Matiboux
