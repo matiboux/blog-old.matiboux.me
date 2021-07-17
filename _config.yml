@@ -4,6 +4,9 @@ title: blog.matiboux.me
 description: Matiboux's blog
 author: Matiboux
 lang: en
+
+# Blog configuration
+permalink: /:categories/:title
 excerpt_separator: <!--more-->
 
 # Jekyll confiuration
