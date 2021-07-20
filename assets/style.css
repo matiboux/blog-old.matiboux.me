@@ -74,6 +74,7 @@ ul { list-style: "- " }
 #main .post > * { margin-bottom: .5em }
 #main .post .metadata { display: inline-block; color: #ccc; font-size: 14px }
 #main .post .metadata + .metadata { margin-left: .5em }
+#main .post .metadata + .content { margin-top: .5em }
 #main .post .categories > span, #main .post .tags > span { border-bottom: 1px dotted }
 #main .post .categories > span { color: #0cc; border-color: #0cc }
 #main .post .tags > span { color: #888; border-color: #888 }
