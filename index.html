@@ -16,14 +16,18 @@ scripts:
 					<i class="fas fa-calendar-day fa-fw"></i>
 					{{ post.date | date: "%B %e, %Y" }}
 				</p>
-				<p class="metadata categories">
-					<i class="fas fa-quote-left fa-fw"></i>
-					<span>{{ post.categories | join: "</span> <span>" }}</span>
-				</p>
-				<p class="metadata tags">
-					<i class="fas fa-tag fa-fw"></i>
-					<span>{{ post.tags | join: "</span> <span>" }}</span>
-				</p>
+				{% if post.categories != empty %}
+					<p class="metadata categories">
+						<i class="fas fa-quote-left fa-fw"></i>
+						<span>{{ post.categories | join: "</span> <span>" }}</span>
+					</p>
+				{% endif %}
+				{% if post.tags != empty %}
+					<p class="metadata tags">
+						<i class="fas fa-tag fa-fw"></i>
+						<span>{{ post.tags | join: "</span> <span>" }}</span>
+					</p>
+				{% endif %}
 
 				<div class="excerpt">
 					{{ post.excerpt }}

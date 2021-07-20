@@ -15,14 +15,18 @@ layout: default
 			{{ page.last_updated | date: "%B %e, %Y" }}
 		</p>
 	{% endif %}
-	<p class="metadata categories">
-		<i class="fas fa-quote-left fa-fw"></i>
-		<span>{{ page.categories | join: "</span> <span>" }}</span>
-	</p>
-	<p class="metadata tags">
-		<i class="fas fa-tag fa-fw"></i>
-		<span>{{ page.tags | join: "</span> <span>" }}</span>
-	</p>
+	{% if page.categories != empty %}
+		<p class="metadata categories">
+			<i class="fas fa-quote-left fa-fw"></i>
+			<span>{{ page.categories | join: "</span> <span>" }}</span>
+		</p>
+	{% endif %}
+	{% if page.tags != empty %}
+		<p class="metadata tags">
+			<i class="fas fa-tag fa-fw"></i>
+			<span>{{ page.tags | join: "</span> <span>" }}</span>
+		</p>
+	{% endif %}
 
 	<div class="content">
 		{{ content }}
