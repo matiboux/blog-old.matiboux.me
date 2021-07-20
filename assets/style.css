@@ -54,7 +54,7 @@ ul { list-style: "- " }
 	word-break: break-word;
 }
 #main h1.color-red { color: #e00; border-color: #e00 }
-#main h1#title { color: #8af; border-color: #8af; animation: title-color-animation 5s infinite }
+#main h1#title { margin-bottom: 2rem; color: #8af; border-color: #8af; animation: title-color-animation 5s infinite }
 
 @keyframes title-color-animation {
 	0% { color: #6af; border-color: #6af }
