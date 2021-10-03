@@ -2,7 +2,7 @@
 layout: post
 title: Matiboux's Windows installation and configuration guide
 date: 2021-10-03
-# last_updated: 2021-10-03
+last_updated: 2021-10-03
 categories: [blog]
 tags: [Windows]
 
@@ -170,7 +170,7 @@ If you want to configure "OneDrive", click on "Sign in" below it:
 - Click on "Later" when prompted about the mobile app.
 - Click on "Open my OneDrive folder" to finish and verify its content.
 
-In the "System" settings:
+In the <u>"System"</u> settings:
 
 - Display : Rien à changer
 - Sound : Rien à changer
@@ -246,7 +246,7 @@ In the "System" settings:
     - In "Remote":
       - Disable "Allow Remote Assistance connections to this computer"
 
-In "Devices":
+In <u>"Devices"</u>:
 
 - In "Bluetooth & other devices":
   - Turn off Bluetooth if you're not using it
@@ -261,9 +261,9 @@ In "Devices":
 - In "Autoplay": nothing in particular
 - In "USB": nothing in particular
 
-In "Phone": nothing in particular
+In <u>"Phone"</u>: nothing in particular
 
-In "Network & Internet":
+In <u>"Network & Internet"</u>:
 
 - In "Status":
   - In "Properties" for the current network's:
@@ -276,7 +276,7 @@ In "Network & Internet":
   - Change the network settings if this is supported by your device
 - In "Proxy": nothing in particular
 
-In "Personalization":
+In <u>"Personalization"</u>:
 
 - In "Background":
   - Customize your background
@@ -326,7 +326,7 @@ In "Personalization":
     - Disable "Meet Now"
   - Disable "Show contacts on the taskbar"
 
-In "Apps":
+In <u>"Apps"</u>:
 
 - In "Apps & features":
   - In "Optional features":
@@ -345,7 +345,7 @@ In "Apps":
 - In "Startup":
   - Disable "Microsoft Edge"
 
-In "Accounts":
+In <u>"Accounts"</u>:
 
 - In "Your info": nothing in particular
 - In "Email & accounts": nothing in particular
@@ -360,7 +360,7 @@ In "Accounts":
   - Enable "Sync settings"
   - Enable all settings
 
-In "Time & Language":
+In <u>"Time & Language"</u>:
 
 - In "Date & Time":
   - Set the time zone
@@ -383,7 +383,7 @@ In "Time & Language":
   - Select "French (France)" as speech language
   - Enable "Recognize non-native accents for this langgages
 
-In "Gaming":
+In <u>"Gaming"</u>:
 
 - In "Xbox Game Bar": nothing in particular
 - In "Captures": nothing in particular
@@ -391,7 +391,7 @@ In "Gaming":
   - Enable "Game Mode"
 - In "Xbox Management": nothing in particular
 
-In "Ease of Access":
+In <u>"Ease of Access"</u>:
 
 - In "":
 - In "Keyboard":
@@ -401,7 +401,7 @@ In "Ease of Access":
 - In "": nothing in particular
 - In "": nothing in particular
 
-In "Search":
+In <u>"Search"</u>:
 
 - In "Permission & History":
   - Set "SafeSearch" to "Off" (depending on the user)
@@ -409,7 +409,7 @@ In "Search":
   - _Requires to be logged as an administrator to edit._
   - Select the "Enhanced" indexing method.
 
-In "Privacy":
+In <u>"Privacy"</u>:
 
 - In "General":
   - Enable all settings
@@ -443,7 +443,7 @@ In "Privacy":
   - Disable "Communicate with unpaired devices"
 - In "Background apps": nothing in particular
 
-In "Update & Security":
+In <u>"Update & Security"</u>:
 
 - In "Windows Update":
   - Click on "Check for updates"
@@ -524,7 +524,7 @@ Apps you want to uninstall might be:
 
 ### Settings
 
-In "Update & Security":
+In <u>"Update & Security"</u>:
 
 - In "For developers":
   - _Requires to enter the admin password._
@@ -561,7 +561,8 @@ Once Windows 11 installed, there are some settings you should check again.
 
 ### Settings
 
-In "Personalization":
+In <u>"Personalization"</u>:
+
 - In "Taskbar":
   - Disable "Widgets" taskbar item
   - Disable "Chat" taskbar item
@@ -652,7 +653,6 @@ _This list is incomplete and may be updated later._
 ### Matiboux's taskbar pinned apps
 
 Pinned apps in my taskbar (in order):
-(come back to this after you've installed your apps, once your configuration is finished)
 
 - File explorer
 - Notepad
